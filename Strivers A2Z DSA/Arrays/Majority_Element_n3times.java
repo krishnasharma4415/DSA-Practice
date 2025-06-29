@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Majority_Element 
+public class Majority_Element_n3times 
 {
     int majorityElement(int nums[])
     {
@@ -29,12 +29,12 @@ public class Majority_Element
                 count++;
         }
 
-        if(count> nums.length / 2)
+        if(count> nums.length / 3)
             return candidate;
         else
             return -1;
     }   
-    
+
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
@@ -46,10 +46,10 @@ public class Majority_Element
         for(int i = 0; i < n; i++)
             nums[i] = sc.nextInt();
         
-        Majority_Element me = new Majority_Element();
+        Majority_Element_n3times me = new Majority_Element_n3times();
         int result = me.majorityElement(nums);
         
-        if(result != 0)
+        if(result != -1)
             System.out.println("The majority element is: " + result);
         else
             System.out.println("No majority element found.");
