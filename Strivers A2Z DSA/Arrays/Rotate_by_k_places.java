@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Rotate_by_k_places {
     
-    // Right rotate by 1 position
     void rotateOnce(int arr[], int n) 
     {
         if (n <= 1)
